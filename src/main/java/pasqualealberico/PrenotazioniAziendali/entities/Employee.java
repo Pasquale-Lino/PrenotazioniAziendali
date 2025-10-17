@@ -17,7 +17,7 @@ public class Employee {
     @GeneratedValue
     private UUID id;
     private String username;
-    private String nome;
+    private String name;
     private String cognome;
     private String email;
 
