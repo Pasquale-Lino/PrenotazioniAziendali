@@ -13,7 +13,7 @@ import pasqualealberico.PrenotazioniAziendali.services.TravelService;
 import java.util.UUID;
 
 @RestController
-@RequestMapping
+@RequestMapping("/travels")
 public class TravelController {
     @Autowired TravelService travelService;
 
@@ -28,7 +28,7 @@ public class TravelController {
 
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
-    public Travel create(@RequestParam@Validated NewTravelPayload payload){
+    public Travel create(@RequestBody @Validated NewTravelPayload payload){
         return travelService.create(payload);
     }
 

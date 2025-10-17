@@ -13,7 +13,7 @@ public record NewEmployeePayload(
         @NotBlank(message = "nome obbligatoria")
         String name,
         @NotBlank(message = "cognome obbligatoria")
-        String cognome,
+        String surname,
         @Email @NotBlank
         String email
 ) {}
